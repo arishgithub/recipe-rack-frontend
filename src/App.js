@@ -39,8 +39,8 @@ const App = () => {
   };
 
   return (
-    <div className='App'>
-      <h1>Recipe App</h1>
+    <div className='min-h-screen bg-gray-100 flex flex-col items-center'>
+      <h1 className='text-4xl font-bold my-8'>Recipe App</h1>
       {editingRecipe ? (
         <EditRecipe recipe={editingRecipe} onRecipeEdited={handleRecipeEdited} />
       ) : (
