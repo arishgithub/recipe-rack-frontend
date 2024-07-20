@@ -14,11 +14,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:css": "tailwindcss build src/tailwind.css -o src/index.css",
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:css": "NODE_ENV=production postcss src/index.css -o src/tailwind.css"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
